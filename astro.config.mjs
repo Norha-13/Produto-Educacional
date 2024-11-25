@@ -4,7 +4,7 @@ import unocss from "@unocss/astro";
 
 // https://astro.build/config
 export default defineConfig({
-    base: 'Produto-Educacional',
+    base: '/Produto-Educacional',
     outDir: 'docs',
     integrations: [
         unocss({
