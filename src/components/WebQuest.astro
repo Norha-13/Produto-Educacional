@@ -1,0 +1,23 @@
+---
+import Layout from "../layouts/Layout.astro";
+
+interface Props {
+  title: string;
+  description: string;
+}
+
+
+const { title, description} = Astro.props;
+
+---
+
+
+<Layout title={title}>
+  <div class="flex-grow container flex-col mx-auto px-4 py-6 md:flex">
+    <h1 class="text-title-1 font-bold">{title}</h1>
+    <p class="text-muted mb-6">{description}</p>
+    <div class="prose max-w-none">
+      <slot />
+    </div>
+  </div>
+  </Layout>

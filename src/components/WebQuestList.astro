@@ -1,0 +1,72 @@
+---
+import SvgIcon from "./SvgIcon.astro";
+import cardIcon from "../icons/card";
+import handshakeIcon from "../icons/handshake";
+
+export type WebQuest = {
+  id: string;
+  title: string;
+  description: string;
+  icon: string;
+  alt: string;
+};
+
+const webQuests: WebQuest[] = [
+  {
+    id: "1",
+    title: "Eu, Diretor",
+    description: "Bem-vindos gestores!",
+    icon: handshakeIcon,
+    alt: "Ícone de um diretor",
+  },
+  {
+    id: "2",
+    title: "Explorando a História do Brasil",
+    description: "Desvendando os eventos que moldaram nossa nação",
+    icon: cardIcon,
+    alt: "Ícone de um mapa do Brasil",
+
+  },
+  {
+    id: "3",
+    title: "Matemática no Cotidiano",
+    description: "Aplicações práticas de conceitos matemáticos",
+    alt: "Ícone de um livro de matemática",
+    icon: cardIcon,
+  },
+  {
+    id: "4",
+    title: "Português no Cotidiano",
+    description: "Aplicações de portugues no cotidiano",
+    alt: "Ícone de um livro de português",
+    icon: cardIcon,
+  },
+];
+---
+
+<div class="mt-6">
+  <h2 class="text-2xl font-bold mb-4">WebQuests</h2>
+  <div class="card">
+    {
+      webQuests.map((quest) => (
+        <a href={`/webquest/${quest.id}`} class="block text-blue-600 transition transition-all hover:scale-105 bg-white  p-4 rounded shadow text-center">
+            <SvgIcon
+              class="h-14 w-auto inline-block text-foreground mb-4"
+              d={quest.icon}
+            />
+            <h3 class="text-body font-semibold mb-4">{quest.title}</h3>
+            <p class="text-gray-600 line-clamp-2">{quest.description}</p>
+        </a>
+      ))
+    }
+  </div>
+</div>
+
+
+<style>
+  .card {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 1rem;
+  }
+</style>

@@ -1,0 +1,13 @@
+---
+const { class: className } = Astro.props
+---
+
+<aside class="bg-gray-100 p-4 w-64" class:list={className}>
+    <nav>
+      <ul class="space-y-2">
+        <li><a href="/contato" class="block hover:bg-gray-200 p-2 rounded">Apresentação</a></li>
+        <li><a href="/informacao" class="block hover:bg-gray-200 p-2 rounded">Espaço do professor</a></li>
+        <li><a href="/informacao" class="block hover:bg-gray-200 p-2 rounded">Contato</a></li>
+      </ul>
+    </nav>
+  </aside>
