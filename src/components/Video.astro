@@ -1,11 +1,18 @@
 ---
+interface Props {
+  title: string;
+  code: string;
+}
+
+
+const { title, code} = Astro.props;
 
 ---
 
 <iframe 
 class="w-full aspect-ratio-video" 
-src="https://www.youtube.com/embed/7NLhNTohgY4" 
-title="Webquest -  atividades pedagógicas" 
+src={`https://www.youtube.com/embed/${code}`}
+title={title} 
 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
 referrerpolicy="strict-origin-when-cross-origin" 
 allowfullscreen>

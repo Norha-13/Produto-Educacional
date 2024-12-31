@@ -8,9 +8,10 @@ export default defineConfig<PresetUnoTheme>({
   presets: [
     presetUno(),
     presetWebFonts({
+      provider: 'google',
       fonts: {
-        "display": ['Inter'],
-        "sans": ['Open Sans'],
+        "display": ['Julius Sans One'],
+        "sans": ['Inter'],
       },
     })
   ],
