@@ -1,7 +1,17 @@
 ---
-import { Image } from "astro:assets"
-import Logo from "../assets/images/logo.png"
+import { Image } from "astro:assets";
+import Logo from "../assets/images/logo.png";
 ---
+
 <nav class="p-1">
-    <Image src={Logo} alt="Logo da CyberQuest" loading="lazy"/>
+    <Image src={Logo} alt="Logo da CyberQuest" loading="lazy" usemap="#logo" />
+    <map name="logo">
+        <area
+            shape="rect"
+            coords="153,5, 590,296"
+            href="/"
+            alt="Logo da CyberQuest"
+            title="Voltar para a página inicial"
+        />
+    </map>
 </nav>

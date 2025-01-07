@@ -1,7 +1,7 @@
 
 import presetWebFonts from '@unocss/preset-web-fonts'
 import transformerVariantGroup from '@unocss/transformer-variant-group'
-import { defineConfig, presetUno, type PresetUnoTheme } from 'unocss'
+import { defineConfig, presetUno, type PresetUnoTheme, presetTypography } from 'unocss'
 import transformerDirectives from '@unocss/transformer-directives'
 
 export default defineConfig<PresetUnoTheme>({
@@ -13,7 +13,8 @@ export default defineConfig<PresetUnoTheme>({
         "display": ['Julius Sans One'],
         "sans": ['Inter'],
       },
-    })
+    }),
+    presetTypography(),
   ],
   theme: {
     colors: {

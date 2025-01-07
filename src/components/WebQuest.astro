@@ -1,23 +1,42 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import SvgIcon from "./SvgIcon.astro";
+import arrowLeft from "../icons/arrow-left";
+import arrowRight from "../icons/arrow-right";
 
 interface Props {
-  title: string;
   description?: string;
+  title: string;
+  previous?: string;
+  next?: string;
 }
 
-
-const { title, description} = Astro.props;
-
+const { title, description, previous, next } = Astro.props;
 ---
 
-
 <Layout title={title}>
-  <div class="flex-grow container flex-col mx-auto px-4 py-6 md:flex">
-    <h1 class="text-title-1 font-bold">{title}</h1>
+  <article class="flex-grow flex-col mx-auto px-4 py-6 md:flex">
+    <header class="flex items-center gap-3">
+      <h1 class="text-title-1 font-bold flex-1">{title}</h1>
+      {
+        previous && (
+          <a href={previous} class="text-8">
+            <SvgIcon class="color-black text-8" d={arrowLeft} />
+          </a>
+        )
+      }
+
+      {
+        next && (
+          <a href={next}>
+            <SvgIcon class="color-black text-8" d={arrowRight} />
+          </a>
+        )
+      }
+    </header>
     <p class="text-muted mb-6">{description}</p>
-    <div class="prose max-w-none">
+    <div class="prose max-w-none text-justify break-words text-pretty">
       <slot />
     </div>
-  </div>
-  </Layout>
+  </article>
+</Layout>

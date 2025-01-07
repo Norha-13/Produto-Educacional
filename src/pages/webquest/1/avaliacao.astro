@@ -1,0 +1,18 @@
+---
+import { Image } from "astro:assets";
+import Imagem2 from "../../../assets/images/2.png";
+import Imagem3 from "../../../assets/images/3.png";
+import WebQuest from "../../../components/WebQuest.astro";
+---
+<WebQuest title="5. AVALIAÇÃO" previous="/webquest/1/processo" next="/webquest/1/conclusao">
+<div>
+    <ul class="list-disc">
+        <li class="prose mb-2">
+            A avaliação será realizada conforme os critérios abaixo:
+        </li>
+    </ul>
+
+    <Image class="mb-4" src={Imagem2} alt="Logo da CyberQuest" loading="lazy" />
+    <Image class="mb-4" src={Imagem3} alt="Logo da CyberQuest" loading="lazy" />
+</div>
+</WebQuest>
