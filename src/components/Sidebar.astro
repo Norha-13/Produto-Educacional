@@ -5,6 +5,7 @@ const { class: className } = Astro.props
 <aside class="bg-blue-100 p-4 w-64" class:list={className}>
     <nav>
       <ul class="space-y-2">
+        <li><a href={import.meta.env.BASE_URL + "/"} class="block hover:bg-white p-2 rounded">Início</a></li>
         <li><a href={import.meta.env.BASE_URL + "/apresentacao/"} class="block hover:bg-white p-2 rounded">Sobre a Plataforma CyberQuest</a></li>
         <li><a href={import.meta.env.BASE_URL + "/area-do-professor/"} class="block hover:bg-white p-2 rounded">Sala do Professor</a></li>
         <li><a href={import.meta.env.BASE_URL + "/area-do-conhecimento/"} class="block hover:bg-white p-2 rounded">Áreas do Conhecimento</a></li>
