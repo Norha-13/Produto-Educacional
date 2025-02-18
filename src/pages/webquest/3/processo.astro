@@ -4,36 +4,92 @@ import WebQuest from "../../../components/WebQuest.astro";
 
 <WebQuest
     title="3. PROCESSSO"
-    previous={`${import.meta.env.BASE_URL}/webquest/1/tarefa`}
-    next={`${import.meta.env.BASE_URL}/webquest/1/recurso`}
+    previous={`${import.meta.env.BASE_URL}/webquest/3/tarefa`}
+    next={`${import.meta.env.BASE_URL}/webquest/3/recurso`}
 >
     <div>
+        <p class="mb-2">Dê um nome para sua empresa de consultoria;</p>
         <p class="mb-2">
-            Após definidas as equipes, vocês darão início à busca de informações
-            necessárias para a resolução das tarefas;
+            Em seguida, a equipe dará início à busca de informações necessárias
+            para a resolução das tarefas;
         </p>
         <p class="mb-2">
-            Além dos recursos disponibilizados neste webquest, vocês poderão
+            Pesquise na Nova Lei de Licitações e Contratos Lei nº. 14.133/21 e
+            nos sites indicados nos recursos abaixo;
+        </p>
+        <p>
+            Além dos recursos disponibilizados na webquest, vocês podem também
             consultar a Assessoria Financeira da Escola presencialmente para
             informações pontuais.
         </p>
-        <p class="mb-2">
-            O formulário “Documento de Oficialização da Demanda”, deverá ser
-            preenchido conforme as orientações constantes nos recursos abaixo, e
-            ser entregue em PDF e na data estabelecida, contendo, além do
-            requerido, as fontes utilizadas para a sua elaboração.
+        <p>
+            <strong>Questionamento norteador:</strong> O que diferencia as modalidades
+            de contratações públicas em termos de complexidade e valores envolvidos?
         </p>
         <p>
-            Os itens devem refletir a demanda de material de consumo
-            (expediente) utilizado nas atividades rotineiras da Escola,
-            devidamente justificado e com estimativa de preços.
+            Após a coleta de informações a equipe deverá elaborar uma
+            comparativa, com as seguintes informações: <strong
+                >Modalidade de Compra; Conceito, Fundamento Legal e Exemplo.</strong
+            >
+        </p>
+        <table class="p-table mb-2">
+            <thead>
+                <tr>
+                    <th>Modalidade de Compra</th>
+                    <th>Conceito/Aplicabilidade</th>
+                    <th>Fundamento Legal</th>
+                    <th>Exemplo</th>
+                </tr>
+            </thead>
+            <tbod>
+                <tr>
+                    <td>Pregão Eletrônico</td>
+                    <td
+                        >Modalidade de licitação para aquisição de bens e
+                        serviços comuns</td
+                    >
+                    <td>Lei 14.133/21</td>
+                    <td>Aquisição de material de expediente</td>
+                </tr>
+            </tbod>
+        </table>
+        <p>
+            O trabalho deverá ser entregue em PDF e poderá ser realizado em
+            ferramenta de edição de texto ou outro aplicativos como o Canva;
+            apresentação em folha A4; orientação em paisagem, margens superior e
+            esquerda 3cm, inferior e direita 2 cm; alinhamento à esquerda,
+            espaçamento simples, cabeçalho em negrito, fonte Arial ou Times New
+            Roman, tamanho 12.
         </p>
         <p>
-            O documento poderá ser realizado em ferramenta de edição de texto ou
-            outro aplicativos como o Canva; apresentação em folha A4; margens
-            superior e esquerda 3cm, inferior e direita 2 cm; alinhamento à
-            esquerda, espaçamento simples, fonte Arial ou Times New Roman,
-            tamanho 12.
+            Lembre-se, você está atuando como profissional, a estética também é
+            importante!
+        </p>
+        <p>
+            Embora seja um trabalho em equipe, cada componente é responsável na
+            resolução de tarefas, que devem ser entregues na data estabelecida,
+            contendo, além do requerido, as fontes utilizadas para a sua
+            elaboração.
         </p>
     </div>
 </WebQuest>
+
+<style>
+    .p-table {
+        width: 100%;
+        border-collapse: collapse;
+        border: 1px solid #000;
+    }
+
+    .p-table th {
+        border: 1px solid #000;
+        padding: 8px;
+        text-align: left;
+        background-color: #f2f2f2;
+    }
+
+    .p-table td {
+        border: 1px solid #000;
+        padding: 8px;
+    }
+</style>
