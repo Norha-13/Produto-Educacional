@@ -41,6 +41,7 @@ export default defineConfig<PresetUnoTheme>({
     ["text-title-1", "font-display text-4 md:text-8 font-800 leading-12 tracking-0.2px"],
     ["text-title-2", "font-display text-2 md:text-6 font-800 leading-12 tracking-0.2px"],
     ["text-body", "font-sans text-4 font-400 leading-6 tracking-0.2px"],
+    ["text-body-1", "font-display text-5 font-800 leading-6 tracking-0.2px"],
     ["text-body-md", "font-sans text-4 md:text-5 font-400 leading-6 tracking-0.2px"],
   ],
   transformers: [
