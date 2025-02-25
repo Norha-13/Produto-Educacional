@@ -3,6 +3,7 @@ import SvgIcon from "./SvgIcon.astro";
 import cardIcon from "../icons/card";
 import handshakeIcon from "../icons/handshake";
 import editSquare from "../icons/edit-square";
+import cifrao from "../icons/cifrao";
 
 export type WebQuest = {
   id: string;
@@ -24,7 +25,7 @@ const webQuests: WebQuest[] = [
   {
     id: "2",
     title: "Eu, Diretor",
-    description: "Bem-vindos gestores!",
+    description: "Parabéns, Você foi promovido(a)!",
     icon: handshakeIcon,
     alt: "Ícone de um diretor",
   },
@@ -32,15 +33,15 @@ const webQuests: WebQuest[] = [
     id: "3",
     title: "Consultoria",
     description: "Modalidades de Licitação",
-    alt: "Ícone de um livro de matemática",
+    alt: "Ícone de um lápis",
     icon: editSquare,
   },
   {
     id: "4",
-    title: "Português no Cotidiano",
-    description: "Aplicações de portugues no cotidiano",
-    alt: "Ícone de um livro de português",
-    icon: cardIcon,
+    title: "Orçamento Público",
+    description: "A cada demanda uma nova emoção",
+    alt: "Icone de dinheiro",
+    icon: cifrao,
   },
 ];
 ---

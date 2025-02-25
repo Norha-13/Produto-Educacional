@@ -1,0 +1,60 @@
+---
+import { Image } from "astro:assets";
+import Imagem1 from "../../../assets/images/1.jpeg";
+import WebQuest from "../../../components/WebQuest.astro";
+---
+
+<WebQuest
+  title="1. INTRODUÇÃO"
+  previous={`${import.meta.env.BASE_URL}/webquest/1`}
+  next={`${import.meta.env.BASE_URL}/webquest/1/tarefa`}
+>
+  <div>
+    <Image
+      class="mb-4"
+      src={Imagem1}
+      alt="Logo da CyberQuest"
+      loading="lazy"
+      width={340}
+      height={340}
+    />
+    <p>
+      O vídeo retrata um diálogo de Jorginho com a sua mãe, que pede para que
+      ele vá ao mercado, e compre “arroz”. O garoto gentilmente atende o pedido,
+      mas sente dificuldade para finalizar a compra. Dentre tantas opções na
+      prateleira e a demanda pouco especificada de sua mãe, que não lhe oferecem
+      elementos mínimos para que ele consiga fazer uma compra assertiva, quem
+      nunca?
+    </p>
+
+    <p>
+      O mercado oferece milhares de produtos em diferentes categorias, desde
+      alimentos até itens de limpeza. A vasta gama de opções pode deixar os
+      consumidores confusos, especialmente quando não possuem familiaridade com
+      o objeto que se pretende adquirir, por isso, uma lista de compras bem
+      elaborada é essencial para otimizar o tempo e garantir que todos os itens
+      necessários sejam adquiridos. Além disso, ajuda a evitar compras por
+      impulso e desperdício.
+    </p>
+    <p>
+      Nas compras públicas não é tão diferente, dilemas como o de Jorginho,
+      também são enfrentados em maior escala, por servidores(as) públicos(as) de
+      todo país, demandas mal especificadas e mal justificadas, comprometem todo
+      o processo de contratação. A insegurança na demanda pode ocasionar atraso
+      na finalização de processo, demora em atender o interesse público, a
+      aquisição de produtos ou serviços menos adequados e até mesmo deixar de
+      comprar itens realmente essenciais.
+    </p>
+
+    <p>
+      Agora vocês serão demandantes e tem uma missão a cumprir, chegou a hora de
+      pesquisar e compreender um pouco mais sobre esse importante tema.
+    </p>
+
+    <p>
+      Sejam pesquisadores curiosos e demandantes comprometidos, sua Escola
+      precisa de vocês!
+    </p>
+    <p>Bom trabalho!</p>
+  </div>
+</WebQuest>

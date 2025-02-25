@@ -1,0 +1,35 @@
+---
+import { Image } from "astro:assets";
+import Imagem2 from "../../../assets/images/2.jpeg";
+import WebQuest from "../../../components/WebQuest.astro";
+---
+
+<WebQuest
+  title="1. INTRODUÇÃO"
+  previous={`${import.meta.env.BASE_URL}/webquest/3`}
+  next={`${import.meta.env.BASE_URL}/webquest/3/tarefa`}
+>
+  <div>
+    <Image
+      class="mb-4 mx-auto"
+      src={Imagem2}
+      alt="Logo da CyberQuest"
+      loading="lazy"
+      width={540}
+      height={540}
+    />
+    <p>
+      Você, profissional Técnico em Administração, foi contratado como consultor
+      para capacitar profissionais iniciantes no Setor de Aquisições e Contratos
+      sobre as modalidades de Contratação em uma Instituição Pública. 
+    </p>
+
+    <p>
+      Em sua primeira fala, você pontua que uma contratação pública não acontece de uma
+      hora pra outra, o <strong>planejamento que é desenvolvido em equipe é o</strong> ponto
+      norteador para a tomada de decisões durante todo o processo, inclusive a
+      modalidade de licitação ou a sua dispensa, desde que autorizado pelo
+      Ordenador de Despesas.
+    </p>
+  </div>
+</WebQuest>
