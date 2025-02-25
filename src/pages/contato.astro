@@ -3,17 +3,81 @@ import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="Contato">
-    <div class="flex-grow container mx-auto px-4 py-2 md:flex">
+    <div class="container mx-auto px-4 py-2">
         <div>
-            <p class="text-body-1">Sugestões, elogios, críticas e contribuições:</p>
-            <p class="mb-4">Sua mensagem é importante para nós!</p>
+            <div class="mx-auto ">
+                <h1 class="text-title-1 mb--2">Sugestões, elogios, críticas e contribuições:</h1>
+                <p class="text-5 mb-4">Sua mensagem é importante para nós!</p>
+    
+            </div>
             <p class="mb-4 text-justify">
-                A plataforma Cyberquest é um produto educacional fruto do Programa
-                de Pós-Graduação em Educação Profissional e Tecnológica ProfEPT IFRN
-                campus Mossoró. A responsável pela construção e manutenção desse
-                ambiente de aprendizagem é a mestranda Norha Kalyna Peixoto Queiroz,
-                sob a orientação da Profª. Drª. Edneide da Conceição Bezerra.
+                A plataforma Cyberquest é um produto educacional fruto do
+                Programa de Pós-Graduação em Educação Profissional e Tecnológica
+                ProfEPT IFRN campus Mossoró. A responsável pela construção e
+                manutenção desse ambiente de aprendizagem é a mestranda Norha
+                Kalyna Peixoto Queiroz, sob a orientação da Profª. Drª. Edneide
+                da Conceição Bezerra.
             </p>
+            <form
+                action="https://formsubmit.co/70f390d81ba8bb635270058c58479f54"
+                method="POST"
+            >
+                <input type="hidden" name="_captcha" value="false" />
+                <input
+                    type="hidden"
+                    name="_subject"
+                    value="Contato do Cyberwquest"
+                />
+                <input
+                    type="hidden"
+                    name="_next"
+                    value=`${import.meta.env.BASE_URL}/obrigado/`
+                />
+
+                <label class="block w-full mb-1" for="name">Nome</label>
+                <input class="block w-full mb-4" type="text" name="name" placeholder="Digite seu nome" required />
+
+                <label class="block w-full mb-1" for="email">E-mail</label>
+                <input
+                    class="block w-full mb-4"
+                    type="email"
+                    name="email"
+                    placeholder="Digite seu e-mail"
+                    required
+                />
+
+                <label class="block w-full mb-1" for="message">Mensagem</label>
+                <textarea class="block w-full mb-4" name="memsage" required placeholder="Digite sua mensagem"
+                ></textarea>
+
+                <button class="float-right " type="submit">Enviar</button>
+            </form>
         </div>
     </div>
 </Layout>
+
+<style>
+    
+    input {
+        padding: 0.5rem;
+        border: 1px solid #ccc;
+        border-radius: 0.25rem;
+    }
+    button {
+        width: 10rem;
+        padding: 0.5rem;
+        border: none;
+        border-radius: 0.25rem;
+        background-color: #007bff;
+        color: white;
+        cursor: pointer;
+    }
+    button:hover {
+        background-color: #0056b3;
+    }
+    textarea {
+        padding: 0.5rem;
+        border: 1px solid #ccc;
+        border-radius: 0.25rem;
+    }
+</style>
