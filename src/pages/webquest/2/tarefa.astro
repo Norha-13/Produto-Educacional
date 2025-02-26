@@ -1,20 +1,54 @@
 ---
 import WebQuest from "../../../components/WebQuest.astro";
+import { Image } from "astro:assets";
+import Imagem5 from "../../../assets/images/5.jpg";
 ---
 
 <WebQuest
     title="2. TAREFA"
-    previous={`${import.meta.env.BASE_URL}/webquest/3/introducao`}
-    next={`${import.meta.env.BASE_URL}/webquest/3/processo`}
+    previous={`${import.meta.env.BASE_URL}/webquest/2/introducao`}
+    next={`${import.meta.env.BASE_URL}/webquest/2/processo`}
 >
     <div>
         <p class="mb-2">
-            A) Pesquisar na Nova Lei de Licitações e Contratos, Lei nº.
-            14.133/21, sobre as modalidades de licitação;
+            O dia do estudante está chegando, por isso você e sua equipe estão
+            planejando uma surpresa para os alunos. Como se trata de uma data
+            especial decidiram contratar um palestrante renomado, para um
+            momento descontraído e motivacional.
+        </p>
+        <Image
+            class="mb-4 mx-auto"
+            src={Imagem5}
+            alt="Imagem do dia do estudante"
+            loading="lazy"
+            width={540}
+            height={540}
+        />
+        <p>
+            Em princípio, todas as obras, serviços e compras realizadas pelo
+            Poder Público devem ser precedidas de licitação, que assegure
+            igualdade de condições a todos os concorrentes, com cláusulas que
+            estabeleçam obrigações de pagamento, mantidas as condições efetivas
+            da proposta (CF art. 37, XXI).
         </p>
         <p>
-            B) Elaborar um quadro/tabela comparativo entre as modalidades de
-            Contratações Públicas conforme a Lei nº. 14.133/21.
+            Mas, e quando não há concorrentes? Quando a competição se torna
+            inviável e até mesmo impossível?
         </p>
+        <p>
+            Considerando o conteúdo apresentado acima, vocês deverão cumprir a
+            seguinte tarefa:
+        </p>
+        <ul class="list-disc">
+            <li>
+                <p>
+                    Elaborar <strong>um mapa mental</strong>, onde a inexigibilidade de licitação
+                    deverá ser a ideia central, relacionada as seguintes
+                    questões: conceito, aplicabilidade, viabilidade de
+                    competição (viabilidade do caso apresentado acima), exemplos
+                    de inexigibilidades aplicáveis no contexto educacional.
+                </p>
+            </li>
+        </ul>
     </div>
 </WebQuest>

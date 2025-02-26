@@ -1,95 +1,54 @@
 ---
+import { Image } from "astro:assets";
 import WebQuest from "../../../components/WebQuest.astro";
+import Imagem6 from "../../../assets/images/6.jpg";
 ---
 
 <WebQuest
     title="3. PROCESSSO"
-    previous={`${import.meta.env.BASE_URL}/webquest/3/tarefa`}
-    next={`${import.meta.env.BASE_URL}/webquest/3/recurso`}
+    previous={`${import.meta.env.BASE_URL}/webquest/2/tarefa`}
+    next={`${import.meta.env.BASE_URL}/webquest/2/recurso`}
 >
     <div>
-        <p class="mb-2">Dê um nome para sua empresa de consultoria;</p>
         <p class="mb-2">
-            Em seguida, a equipe dará início à busca de informações necessárias
-            para a resolução das tarefas;
+            Após definidas as equipes, o núcleo gestor dará início à busca de
+            informações necessárias para a resolução das tarefas;
         </p>
         <p class="mb-2">
-            Pesquise na Nova Lei de Licitações e Contratos Lei nº. 14.133/21 e
+            Pesquisem na Nova Lei de Licitações e Contratos Lei nº. 14.133/21 e
             nos sites indicados nos recursos abaixo;
         </p>
-        <p>
+        <p class="mb-2">
             Além dos recursos disponibilizados na webquest, vocês podem também
-            consultar a Assessoria Financeira da Escola presencialmente para
-            informações pontuais.
+            consultar a Direção Geral e a Assessoria Financeira da Escola
+            presencialmente para informações pontuais.
         </p>
-        <p>
-            <strong>Questionamento norteador:</strong> O que diferencia as modalidades
-            de contratações públicas em termos de complexidade e valores envolvidos?
-        </p>
-        <p>
-            Após a coleta de informações a equipe deverá elaborar uma
-            comparativa, com as seguintes informações: <strong
-                >Modalidade de Compra; Conceito, Fundamento Legal e Exemplo.</strong
-            >
-        </p>
-        <table class="p-table mb-2">
-            <thead>
-                <tr>
-                    <th>Modalidade de Compra</th>
-                    <th>Conceito/Aplicabilidade</th>
-                    <th>Fundamento Legal</th>
-                    <th>Exemplo</th>
-                </tr>
-            </thead>
-            <tbod>
-                <tr>
-                    <td>Pregão Eletrônico</td>
-                    <td
-                        >Modalidade de licitação para aquisição de bens e
-                        serviços comuns</td
-                    >
-                    <td>Lei 14.133/21</td>
-                    <td>Aquisição de material de expediente</td>
-                </tr>
-            </tbod>
-        </table>
         <p>
             O trabalho deverá ser entregue em PDF e poderá ser realizado em
-            ferramenta de edição de texto ou outro aplicativos como o Canva;
-            apresentação em folha A4; orientação em paisagem, margens superior e
-            esquerda 3cm, inferior e direita 2 cm; alinhamento à esquerda,
-            espaçamento simples, cabeçalho em negrito, fonte Arial ou Times New
-            Roman, tamanho 12.
+            ferramenta de edição de texto ou em outros aplicativos como no
+            Canva; apresentação em folha A4; margens superior e esquerda 3cm,
+            inferior e direita 2 cm; alinhamento centralizado, título em
+            destaque, fonte Arial ou Times New Roman, tamanho 12.
         </p>
         <p>
-            Lembre-se, você está atuando como profissional, a estética também é
-            importante!
+            Abaixo um modelo de mapa mental, porém, podem usar toda a
+            criatividade de verdadeiros gestores para produzir um trabalho
+            objetivo e esteticamente atrativo.
         </p>
+        <Image
+            class="mb-4 mx-auto"
+            src={Imagem6}
+            alt="Imagem de um mapa mental"
+            loading="lazy"
+            width={540}
+            height={540}
+        />
         <p>
-            Embora seja um trabalho em equipe, cada componente é responsável na
-            resolução de tarefas, que devem ser entregues na data estabelecida,
-            contendo, além do requerido, as fontes utilizadas para a sua
-            elaboração.
+            Apesar do trabalho ser realizado em equipe, cada componente é
+            responsável na resolução de tarefas, que devem ser entregues na data
+            estabelecida, contendo, além do requerido, as fontes utilizadas para
+            a sua elaboração.
         </p>
     </div>
 </WebQuest>
 
-<style>
-    .p-table {
-        width: 100%;
-        border-collapse: collapse;
-        border: 1px solid #000;
-    }
-
-    .p-table th {
-        border: 1px solid #000;
-        padding: 8px;
-        text-align: left;
-        background-color: #f2f2f2;
-    }
-
-    .p-table td {
-        border: 1px solid #000;
-        padding: 8px;
-    }
-</style>

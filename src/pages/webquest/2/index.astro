@@ -1,35 +1,42 @@
 ---
 import { Image } from "astro:assets";
-import Imagem2 from "../../../assets/images/2.jpeg";
+import Imagem4 from "../../../assets/images/4.png";
 import WebQuest from "../../../components/WebQuest.astro";
 ---
 
 <WebQuest
   title="1. INTRODUÇÃO"
-  previous={`${import.meta.env.BASE_URL}/webquest/3`}
-  next={`${import.meta.env.BASE_URL}/webquest/3/tarefa`}
+  next={`${import.meta.env.BASE_URL}/webquest/2/tarefa`}
 >
   <div>
     <Image
       class="mb-4 mx-auto"
-      src={Imagem2}
-      alt="Logo da CyberQuest"
+      src={Imagem4}
+      alt="Imagem de um grupo de pessoas em uma reunião"
       loading="lazy"
       width={540}
       height={540}
     />
+    <p>Bem-vindo, Gestores!</p>
     <p>
-      Você, profissional Técnico em Administração, foi contratado como consultor
-      para capacitar profissionais iniciantes no Setor de Aquisições e Contratos
-      sobre as modalidades de Contratação em uma Instituição Pública. 
+      Nessa webquest vocês foram promovidos a gestores escolares de uma
+      Instituição Pública de Educação Profissional, é importante destacar a
+      responsabilidade de gerir recursos e garantir que as contratações
+      necessárias para o bom funcionamento da Instituição sejam feitas dentro da
+      Legalidade.
     </p>
 
     <p>
-      Em sua primeira fala, você pontua que uma contratação pública não acontece de uma
-      hora pra outra, o <strong>planejamento que é desenvolvido em equipe é o</strong> ponto
-      norteador para a tomada de decisões durante todo o processo, inclusive a
-      modalidade de licitação ou a sua dispensa, desde que autorizado pelo
-      Ordenador de Despesas.
+      São vários elementos que devem estar presentes em um contexto educacional,
+      de modo a possibilitar uma educação de qualidade, relevante para o
+      desenvolvimento dos estudantes como futuros profissionais e também para o
+      exercício da cidadania, destacamos, para além do percurso formativo, arte
+      e cultura.
+    </p>
+    <p>
+      Sabendo disso, você e a sua equipe estão organizando um evento supresa que
+      será realizado na Escola em comemoração ao dia do estudante. Avance para
+      saber mais sobre a sua tarefa.
     </p>
   </div>
 </WebQuest>
