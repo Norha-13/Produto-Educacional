@@ -4,18 +4,25 @@ import WebQuest from "../../../components/WebQuest.astro";
 
 <WebQuest
     title="3. PROCESSSO"
-    previous={`${import.meta.env.BASE_URL}/webquest/3/tarefa`}
-    next={`${import.meta.env.BASE_URL}/webquest/3/recurso`}
+    previous={`${import.meta.env.BASE_URL}/webquest/4/tarefa`}
+    next={`${import.meta.env.BASE_URL}/webquest/4/recurso`}
 >
     <div>
-        <p class="mb-2">Dê um nome para sua empresa de consultoria;</p>
         <p class="mb-2">
-            Em seguida, a equipe dará início à busca de informações necessárias
-            para a resolução das tarefas;
+            <strong>Questionamento norteador:</strong> Qual o conceito de compras
+            de custeio e de capital? Qual a legislação aplicável? É possível comprar
+            bens permanentes com recurso de custeio? Qual o impacto de uma compra
+            de capital para o custeio de uma Instituição e o seu patrimônio? Quais
+            recursos a sua escola recebe?
         </p>
         <p class="mb-2">
-            Pesquise na Nova Lei de Licitações e Contratos Lei nº. 14.133/21 e
-            nos sites indicados nos recursos abaixo;
+            O primeiro passo é a pesquisa nos sites disponibilizados nos
+            recursos dessa webquest;
+        </p>
+        <p class="mb-2">
+            Para além dos recursos indicados, vocês podem também consultar a
+            Assessoria Financeira da Escola e a Direção Geral presencialmente
+            para informações pontuais.
         </p>
         <p>
             Além dos recursos disponibilizados na webquest, vocês podem também
@@ -32,38 +39,15 @@ import WebQuest from "../../../components/WebQuest.astro";
                 >Modalidade de Compra; Conceito, Fundamento Legal e Exemplo.</strong
             >
         </p>
-        <table class="p-table mb-2">
-            <thead>
-                <tr>
-                    <th>Modalidade de Compra</th>
-                    <th>Conceito/Aplicabilidade</th>
-                    <th>Fundamento Legal</th>
-                    <th>Exemplo</th>
-                </tr>
-            </thead>
-            <tbod>
-                <tr>
-                    <td>Pregão Eletrônico</td>
-                    <td
-                        >Modalidade de licitação para aquisição de bens e
-                        serviços comuns</td
-                    >
-                    <td>Lei 14.133/21</td>
-                    <td>Aquisição de material de expediente</td>
-                </tr>
-            </tbod>
-        </table>
+
         <p>
-            O trabalho deverá ser entregue em PDF e poderá ser realizado em
-            ferramenta de edição de texto ou outro aplicativos como o Canva;
-            apresentação em folha A4; orientação em paisagem, margens superior e
-            esquerda 3cm, inferior e direita 2 cm; alinhamento à esquerda,
-            espaçamento simples, cabeçalho em negrito, fonte Arial ou Times New
-            Roman, tamanho 12.
-        </p>
-        <p>
-            Lembre-se, você está atuando como profissional, a estética também é
-            importante!
+            Após a realização da pesquisa, vocês iniciarão a elaboração do
+            relatório, que deverá ser entregue em PDF; poderá ser realizado em
+            ferramenta de edição de texto ou em outros aplicativos como o Canva;
+            tamanho mínimo de uma folha A4 (uma lauda); margens superior e
+            esquerda 3cm, inferior e direita 2 cm; alinhamento justificado,
+            fonte Arial ou Times New Roman, tamanho 12, poderão ser incluídos
+            fotos ou imagens.
         </p>
         <p>
             Embora seja um trabalho em equipe, cada componente é responsável na
@@ -73,23 +57,3 @@ import WebQuest from "../../../components/WebQuest.astro";
         </p>
     </div>
 </WebQuest>
-
-<style>
-    .p-table {
-        width: 100%;
-        border-collapse: collapse;
-        border: 1px solid #000;
-    }
-
-    .p-table th {
-        border: 1px solid #000;
-        padding: 8px;
-        text-align: left;
-        background-color: #f2f2f2;
-    }
-
-    .p-table td {
-        border: 1px solid #000;
-        padding: 8px;
-    }
-</style>

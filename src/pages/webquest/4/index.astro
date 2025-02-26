@@ -1,35 +1,55 @@
 ---
 import { Image } from "astro:assets";
-import Imagem2 from "../../../assets/images/2.jpeg";
+import Imagem3 from "../../../assets/images/3.jpeg";
 import WebQuest from "../../../components/WebQuest.astro";
 ---
 
 <WebQuest
   title="1. INTRODUÇÃO"
-  previous={`${import.meta.env.BASE_URL}/webquest/3`}
-  next={`${import.meta.env.BASE_URL}/webquest/3/tarefa`}
+  next={`${import.meta.env.BASE_URL}/webquest/4/tarefa`}
 >
   <div>
     <Image
       class="mb-4 mx-auto"
-      src={Imagem2}
-      alt="Logo da CyberQuest"
+      src={Imagem3}
+      alt="Imagem de desenho expressando vontade de comprar"
       loading="lazy"
       width={540}
       height={540}
     />
     <p>
-      Você, profissional Técnico em Administração, foi contratado como consultor
-      para capacitar profissionais iniciantes no Setor de Aquisições e Contratos
-      sobre as modalidades de Contratação em uma Instituição Pública. 
+      A cidade de Morada Nova, situada no interior do Estado do Ceará, é
+      conhecida nacionalmente pelo seu clima, predominantemente seco e altas
+      temperaturas na maior parte do ano. Por esse motivo, você, aluno(a) de uma
+      Escola Pública desta cidade, juntamente com seus colegas de turma,
+      decidiram conversar com a Direção Geral sobre a possibilidade de compra de
+      1 bebedouro para o uso na quadra poliesportiva, necessário para hidratação
+      de todos que ali realizam atividades desportivas, culturais e de ensino.
     </p>
 
     <p>
-      Em sua primeira fala, você pontua que uma contratação pública não acontece de uma
-      hora pra outra, o <strong>planejamento que é desenvolvido em equipe é o</strong> ponto
-      norteador para a tomada de decisões durante todo o processo, inclusive a
-      modalidade de licitação ou a sua dispensa, desde que autorizado pelo
-      Ordenador de Despesas.
+      Como justificativa, a turma alega que após as atividades realizadas na
+      quadra, o caminho até o bebedouro, que fica no primeiro bloco, torna-se
+      exaustivo, e tem inviabilizado o uso desse espaço no período da tarde.
+    </p>
+    <p>
+      A diretora acolhe a reivindicação dos alunos, afinal essa demanda já está
+      no planejamento da Escola, porém, diz que não pode ser atendida de
+      imediato porque o orçamento disponível não corresponde a essa natureza de
+      despesa
+    </p>
+    <p>
+      - Como assim? – questiona a turma – Se existe a demanda, justificativa e
+      orçamento, falta o que mais pra comprar?
+    </p>
+    <p>
+      O orçamento público é dividido em categorias, como um bolo dividido em
+      fatias, cada material, serviço ou equipamento só pode ser comprado se
+      houver orçamento (fatia do bolo) correspondente a essa despesa.
+    </p>
+    <p>
+      Nesta webquest, convidamos você a conhecer sobre as compras de custeio e
+      de capital!
     </p>
   </div>
 </WebQuest>
