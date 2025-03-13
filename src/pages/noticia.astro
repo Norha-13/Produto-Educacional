@@ -1,10 +1,49 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import Image from "astro/components/Image.astro";
+import ImgVagas from "../assets/images/4.jpeg";
 ---
 
 <Layout title="noticias">
     <div class="flex-grow container mx-auto px-4 py-8 text-justify">
-        <span class="text-display"> Noticias</span>
+        <h1 class="text-title-2 mb-4">Inovação nas Contratações Públicas! 🚀</h1>
+
+        <div>
+            <Image
+            class="mb-4 mx-auto"
+                src={ImgVagas}
+                alt="Anúncio de vagas de emprego"
+                loading="lazy"
+                width={600}
+                height={600}
+            />
+            <p class="mb-4">
+                Você já ouviu falar no Contrata+ Brasil? Trata-se de uma
+                plataforma de oportunidade de negócios, desenvolvida e publicada
+                em fevereiro de 2025, pelo Governo Federal, que tem o objetivo
+                de conectar, os compradores públicos, da união, estados e
+                municípios, aos pequenos negócios, de modo a incentivar os
+                empreendimentos locais, gerando mais trabalho, economia e renda.
+            </p>
+            <p class="mb-4">
+                Essa iniciativa visa aproximar os MEI das contratações públicas,
+                uma vez que as licitações, em sua grande maioria, são processos
+                complexos, burocráticos, que acabam por limitar a participação
+                dos microempreendedores individuais e do comércio local. Os
+                interessados podem se cadastrar gratuitamente na plataforma do
+                Contrata+ Brasil, informando os serviços que realizam e
+                informações cadastrais simplificadas. Conheça a plataforma:
+                <a href="https://contratamaisbrasil.sistema.gov.br/" target="_blank">https://contratamaisbrasil.sistema.gov.br/</a>
+            </p>
+            <p class="mb-4">
+                Discuta com seus colegas sobre as possibilidades para os
+                pequenos negócios a partir da implantação dessa ferramenta,
+                pontos positivos, negativos, desafios. Para maiores informações
+                consulte o site do Governo Federal:
+               <a href=" https://www.gov.br/contratamaisbrasil/pt-br" target="_blank"> https://www.gov.br/contratamaisbrasil/pt-br</a>
+            </p>
+
+
+        </div>
     </div>
-      
 </Layout>
